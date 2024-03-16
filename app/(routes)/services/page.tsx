@@ -8,7 +8,7 @@ import CounterServices from "@/components/counter-services";
 import TimeLine from "@/components/time-line";
 import TransitionPage from "@/components/transition-page";
 
-const ServicesPage = () => {
+const StudiesPage = () => {
     return (
         <>
 
@@ -32,4 +32,4 @@ const ServicesPage = () => {
     );
 }
 
-export default ServicesPage;
+export default StudiesPage;

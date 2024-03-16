@@ -1,4 +1,7 @@
-import { BookText, CodeSquare,  HomeIcon, UserRound, Linkedin, Crop, Pencil, Computer, Book, Rocket, Github, Mail, Code } from "lucide-react";
+import { BookText, CodeSquare,  HomeIcon, UserRound, Linkedin, Crop, Pencil, Computer, Book, Rocket, Github, Mail, Link } from "lucide-react";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiSolidity, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const socialNetworks = [
     {
@@ -49,41 +52,48 @@ export const itemsNavbar = [
     {
         id: 5,
         title: "Code",
-        icon: <Code  size={25} color="#fff" strokeWidth={1} />,
+        icon: <Link  size={25} color="#fff" strokeWidth={1} />,
         link: "/code",
     },
 ];
 
-export const dataAboutPage = [
+export const dataStudiesPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        title: "Curso Fullstack Javascript",
+        institution: "CIEF",
+        date: "Actualidad",
+        description: 
+            "Curso centrado en aprender a crear sitios web interactivos usando HTML, CSS y JavaScript en el lado del cliente, y Node.js en el servidor con MySQL para almacenar datos.",
+        badges: [
+            "JavaScript", "HTML", "CSS", "Node.js", "Express.js", "MySQL", "BDD", "OOP", "DOM"
+        ],
+        link: "https://www.grupcief.com/"
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        title: "Chainlink bootcamp 2024",
+        institution: "Chainlink",
+        date: "20/01/24",
+        description: "Entrenamiento oficial para dominar el uso de la tecnología de Oracle Chainlink, abarcando conceptos de blockchain, Solidity, tokens ERC20, NFTs y automatización de Chainlink.",
+        badges: [
+            "Chainlink", "Blockchain", "Solidity", "ERC721", "ERC20", "Blockchain Oracles", "CCIP", "Chainlink Functions"
+        ],
+        link: "https://coinmarketcap.com/currencies/chainlink/"
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
+        title: "Big Data I",
+        institution: "Coliseum",
+        date: "19/12/23",
+        description: "Curso introductorio sobre el uso de Python para manipular grandes conjuntos de datos, incluyendo estadísticas, procesamiento y visualización de datos.",
+        badges: [
+            "Python"
+        ],
+        link: "https://www.centrocoliseum.com/"
     },
-    {
-        id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
-    },
-]
+];
+
 
 export const dataCounter = [
     {
@@ -118,28 +128,28 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        icon: <FaReact />,
+        title: "ReactJS",
+        description: "Desarrollo de una identidad de marca sólida y coherente",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <SiTailwindcss />,
+        title: "TailwindCSS",
+        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas",
     },
     {
-        icon: <Computer />,
-        title: "Desarrollo web",
+        icon: <TbBrandNextjs />,
+        title: "NextJS",
         description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
+        icon: <FaNodeJs />,
+        title: "Node.js",
         description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
     },
     {
-        icon: <Rocket />,
-        title: "SEO",
+        icon: <SiSolidity />,
+        title: "Solidity",
         description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
     },
 ];
@@ -203,7 +213,7 @@ export const dataPortfolio = [
     }
 ];
 
-export const dataTestimonials = [
+export const web3page = [
     {
         id: 1,
         name: "George Snow",

@@ -5,21 +5,23 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
-import { dataTestimonials } from '@/data';
+import { web3page } from '@/data';
 import CircleImage from '@/components/circle-image';
 // import AvatarPortfolio from '@/components/avatar-portfolio';
 import TransitionPage from '@/components/transition-page';
 import Link from 'next/link';
+import AvatarCode from '@/components/avatar-code';
 
-const TestimonialsPage = () => {
+const Web3Page = () => {
     return (
         <>
             <TransitionPage />
+            <AvatarCode/>
             <div className='flex flex-col justify-center h-lvh'>
                 <CircleImage />
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
                     Ejemplos de proyectos
-                    <span className="block font-bold text-secondary"> de desarollo
+                    <span className="block font-bold text-secondary"> de desarollo web3
                     </span>
                 </h1>
                 <div className="flex items-center justify-center">
@@ -38,7 +40,7 @@ const TestimonialsPage = () => {
                             modules={[Pagination]}
                             className="h-[380px] md:h-[300px] w-[270px] xl:w-[750px] lg:w-[650px] md:w-[550px] sm:w-[400]"
                         >
-                            {dataTestimonials.map(({ id, name, description, imageUrl, urlDemo, urlGithub }) => (
+                            {web3page.map(({ id, name, description, imageUrl, urlDemo, urlGithub }) => (
                                 <SwiperSlide key={id}>
                                     <Image src={imageUrl} alt={name} width="100" height="100" className="mx-auto rounded-full" />
                                     <h4 className='text-center'>{name}</h4>
@@ -74,4 +76,4 @@ const TestimonialsPage = () => {
     );
 }
 
-export default TestimonialsPage;
+export default Web3Page;

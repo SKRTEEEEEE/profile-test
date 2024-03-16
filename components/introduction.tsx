@@ -11,14 +11,14 @@ const Introduction = () => {
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Desarollando, <br />
                         <TypeAnimation
                             sequence={[
-                                'la nueva generacion web descentralizada en Solidity',
+                                'la nueva generacion web descentralizada',
                                 2000,
                                 'branding web para proyectos inovadores', 
                                 2000,
-                                'la interaccion entre el mundo real y la nueva generacion web',
+                                'la interaccion entre mundo real y web3',
                                 2000,
-                                'con las tecnologías web del futuro, como Next.js, MongoDB...',
-                                2000
+                                'con las tecnologías web del futuro.',
+                                5000
                             ]}
                             wrapper="span"
                             speed={50}
@@ -28,7 +28,7 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                        Como desarrollador frontend y creador de contenido, me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
+                        Fullstack especializado en tecnologias escalables e descentralizadas, enfocado en ofrecer una experiencia de usuario agradable a traves de funcionalidad interactiva y seguridad.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">

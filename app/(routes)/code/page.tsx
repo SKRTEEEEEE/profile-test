@@ -38,9 +38,9 @@ const Web3Page = () => {
                                 clickable: true
                             }}
                             modules={[Pagination]}
-                            className="h-[380px] md:h-[300px] w-[270px] xl:w-[750px] lg:w-[650px] md:w-[550px] sm:w-[400]"
+                            className="h-[380px] md:h-[300px] w-[270px] xl:w-[750px] lg:w-[650px] sm:w-[550px] "
                         >
-                            {web3page.map(({ id, name, description, imageUrl, urlDemo, urlGithub }) => (
+                            {web3page.map(({ id, name, description, imageUrl, urlDemo, urlGithubWeb, urlGithubBlock }) => (
                                 <SwiperSlide key={id}>
                                     <Image src={imageUrl} alt={name} width="100" height="100" className="mx-auto rounded-full" />
                                     <h4 className='text-center'>{name}</h4>
@@ -50,11 +50,11 @@ const Web3Page = () => {
                                     
                                         <div className="flex justify-between gap-5 mt-5">
                                             <Link
-                                                href={urlGithub}
+                                                href={urlGithubWeb}
                                                 target="_blank"
                                                 className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
                                             >
-                                                Github
+                                                <span className='hidden lg:inline'>Github </span>Website Code
                                             </Link>
 
                                             <Link
@@ -63,6 +63,13 @@ const Web3Page = () => {
                                                 className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
                                             >
                                                 Live demo
+                                            </Link>
+                                            <Link
+                                                href={urlGithubBlock}
+                                                target="_blank"
+                                                className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
+                                            >
+                                                <span className='hidden lg:inline'>Github </span>Blockchain Code
                                             </Link>
                                         </div>
                                     

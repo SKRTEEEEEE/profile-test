@@ -17,7 +17,7 @@ const AboutMePage = () => {
                         <ul className="md:mb-3 xl:text-xl 
                     text-gray-300">
                             <li className="mb-2 border-secondary/10 border-4 rounded-md">
-                            Fullstack web JS<br/>React.js, Next.js, Node.js, Express.js, MongoDB, Mongoose.js, etc...
+                            Fullstack web JS<br/>React.js, Next.js, Node.js, Express.js, MongoDB, Mongoose.js, TailwindCss, etc...
                             </li>
                             <li className="mb-2 border-secondary/10 border-4 rounded-md">Fullstack dApp <i>EVM</i><br />Solidity, Ether.js, Thirdweb, Hardhat, Forge, Chainlink, etc... </li>
                         </ul>

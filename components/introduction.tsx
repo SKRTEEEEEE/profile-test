@@ -7,17 +7,17 @@ const Introduction = () => {
             <div className="z-20 flex items-center justify-around h-full p-6 py-20 md:py-s0 md:grid-cols-2">
                 <Image src="/home-4.png" priority width="300" height="800" className="hidden sm:flex" alt="Avatar" />
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
+                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Desarollando, <br />
                         <TypeAnimation
                             sequence={[
-                                'puedes programarlo',
-                                1000,
-                                'puedes optimizarlo',
-                                1000,
-                                'puedes implementarlo',
-                                1000,
-                                'puedes desarrollarlo',
-                                1000
+                                'la nueva generacion web descentralizada en Solidity',
+                                2000,
+                                'branding web para proyectos inovadores', 
+                                2000,
+                                'la interaccion entre el mundo real y la nueva generacion web',
+                                2000,
+                                'con las tecnologías web del futuro, como Next.js, MongoDB...',
+                                2000
                             ]}
                             wrapper="span"
                             speed={50}

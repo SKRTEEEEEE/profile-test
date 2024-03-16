@@ -27,7 +27,7 @@ const SliderServices = () => {
                 clickable: true
             }}
             modules={[Pagination]}
-            className="h-[280px] md:h-[340px] w-[270px] md:w-[550px]"
+            className="h-[240px] md:h-[340px] w-[270px] md:w-[500px]"
         >
 
             {serviceData.map((item, index) => (

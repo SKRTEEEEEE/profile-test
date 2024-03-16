@@ -7,8 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { dataTestimonials } from '@/data';
 import CircleImage from '@/components/circle-image';
-import AvatarPortfolio from '@/components/avatar-portfolio';
+// import AvatarPortfolio from '@/components/avatar-portfolio';
 import TransitionPage from '@/components/transition-page';
+import Link from 'next/link';
 
 const TestimonialsPage = () => {
     return (
@@ -17,8 +18,9 @@ const TestimonialsPage = () => {
             <div className='flex flex-col justify-center h-lvh'>
                 <CircleImage />
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
-                    Algunos comentarios
-                    <span className="block font-bold text-secondary"> de nuestros clientes</span>
+                    Ejemplos de proyectos
+                    <span className="block font-bold text-secondary"> de desarollo
+                    </span>
                 </h1>
                 <div className="flex items-center justify-center">
                     <div>
@@ -34,15 +36,34 @@ const TestimonialsPage = () => {
                                 clickable: true
                             }}
                             modules={[Pagination]}
-                            className="h-[380px] md:h-[300px] w-[270px] md:w-[550px]"
+                            className="h-[380px] md:h-[300px] w-[270px] xl:w-[750px] lg:w-[650px] md:w-[550px] sm:w-[400]"
                         >
-                            {dataTestimonials.map(({ id, name, description, imageUrl }) => (
+                            {dataTestimonials.map(({ id, name, description, imageUrl, urlDemo, urlGithub }) => (
                                 <SwiperSlide key={id}>
                                     <Image src={imageUrl} alt={name} width="100" height="100" className="mx-auto rounded-full" />
                                     <h4 className='text-center'>{name}</h4>
                                     <div className="mt-5 text-center">
                                         {description}
                                     </div>
+                                    
+                                        <div className="flex justify-between gap-5 mt-5">
+                                            <Link
+                                                href={urlGithub}
+                                                target="_blank"
+                                                className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
+                                            >
+                                                Github
+                                            </Link>
+
+                                            <Link
+                                                href={urlDemo}
+                                                target="_blank"
+                                                className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
+                                            >
+                                                Live demo
+                                            </Link>
+                                        </div>
+                                    
                                 </SwiperSlide>
                             ))}
                         </Swiper>

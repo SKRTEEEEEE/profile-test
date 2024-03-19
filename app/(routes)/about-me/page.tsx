@@ -1,6 +1,7 @@
 import AvatarServices from "@/components/avatar-services";
 import CircleImage from "@/components/circle-image";
 import SliderServices from "@/components/slider-services";
+import Link from "next/link";
 // import TransitionPage from "@/components/transition-page";
 
 const AboutMePage = () => {
@@ -17,12 +18,12 @@ const AboutMePage = () => {
                         <ul className="md:mb-3 xl:text-xl 
                     text-gray-300">
                             <li className="mb-2 border-secondary/10 border-4 rounded-md">
-                            Fullstack web JS<br/>React.js, Next.js, Node.js, Express.js, MongoDB, Mongoose.js, etc...
+                            Fullstack web JS<br/>React.js, Next.js, Node.js, Express.js, MongoDB, Mongoose.js, TailwindCss, etc...
                             </li>
                             <li className="mb-2 border-secondary/10 border-4 rounded-md">Fullstack dApp <i>EVM</i><br />Solidity, Ether.js, Thirdweb, Hardhat, Forge, Chainlink, etc... </li>
                         </ul>
                         
-                    <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</button>
+                    <Link href={"mailto:adanreh.m@gmail.com"} className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</Link>
                 </div>
 
                 {/* SLIDER */}

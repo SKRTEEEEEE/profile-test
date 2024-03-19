@@ -11,9 +11,6 @@ import PortfolioBox from "@/components/portfolio-box";
 
 
 const PortfolioPage = () => {
-    console.log(dataPortfolio);
-    const data4 = dataPortfolio.slice(4)
-    
 
     return (
         <ContainerPage>
@@ -24,7 +21,7 @@ const PortfolioPage = () => {
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Ejemplos <span className="font-bold text-secondary">open-source</span> destacados</h1>
 
                 <div className="relative z-10 grid max-w-5xl gap-6 mx-auto mt-4 md:grid-cols-4">
-                    {data4.map((data) => (
+                    {dataPortfolio.map((data) => (
                         <PortfolioBox key={data.id} data={data} />
                     ))}
                 </div>

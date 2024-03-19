@@ -1,4 +1,4 @@
-import { BookText, CodeSquare,  HomeIcon, UserRound, Linkedin, Crop, Pencil, Computer, Book, Rocket, Github, Mail, Link } from "lucide-react";
+import { BookText, CodeSquare,  HomeIcon, UserRound, Linkedin, Github, Mail, Link } from "lucide-react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { SiSolidity, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -9,11 +9,11 @@ export const socialNetworks = [
         logo: <Github  size={30} strokeWidth={1} />,
         src: "https://github.com/SKRTEEEEEE",
     },
-    {
-        id: 2,
-        logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "https://github.com/SKRTEEEEEE",
-    },
+    // {
+    //     id: 2,
+    //     logo: <Linkedin size={30} strokeWidth={1} />,
+    //     src: "https://github.com/SKRTEEEEEE",
+    // },
     {
         id: 3,
         logo: <Mail size={30} strokeWidth={1} />,
@@ -106,7 +106,7 @@ export const dataCounter = [
     {
         id: 1,
         endCounter: 80,
-        text: "Funcionalidades desarolladas",
+        text: "Funcionalidades desarrolladas",
         lineRight: true,
         lineRightMobile: false,
     },
@@ -130,87 +130,95 @@ export const serviceData = [
     {
         icon: <FaReact />,
         title: "ReactJS",
-        description: "Desarrollo de una identidad de marca sólida y coherente",
+        description: "React-DOM, JWT, Hooks, APIs, Protected Routes, JSX, Router, Redux, etc...",
     },
     {
         icon: <SiTailwindcss />,
         title: "TailwindCSS",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas",
+        description: "Mobile-first, resposive, utility-first, classes y variables, plugins, etc...",
     },
     {
         icon: <TbBrandNextjs />,
         title: "NextJS",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        description: "SSR, CSR, APIs, Pre-rendering, SEO Friendly, Next.js14 Compability, etc...",
     },
     {
         icon: <FaNodeJs />,
         title: "Node.js",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        description: "Async/Await, Nodemon.js, Express.js, NPM (Node Package Manager), JSON, etc...",
     },
     {
         icon: <SiSolidity />,
         title: "Solidity",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        description: "Smart Contracts, Hardhat, Ethet.js, Thirdweb, Estandares ERC, Chainlink, etc... ",
     },
 ];
 
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Presentación responsiva",
+        image: "/image-1.png",
+        urlGithub: "https://github.com/SKRTEEEEEE",
+        urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
+        operative: true,
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Web Presentación Blockchain",
+        image: "/image-2.png",
+        urlGithub: "https://github.com/SKRTEEEEEE/blockchain-presentation",
+        urlDemo: "https://blockchain-presentation-eta.vercel.app/",
+        operative: true,
     },
     {
         id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
+        title: "Web Informativa del Desarrollador",
+        image: "/image-3.png",
+        urlGithub: "https://github.com/SKRTEEEEEE/profile-test",
         urlDemo: "#!",
+        operative: true,
     },
     {
         id: 4,
-        title: "Ideas Creativas",
+        title: "Ejemplos dApps",
         image: "/image-4.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
+        operative: false,
     },
-    {
-        id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    }
+    // {
+    //     id: 5,
+    //     title: "Webs Funcionando",
+    //     image: "/image-5.jpg",
+    //     urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
+    //     urlDemo: "#",
+    //     operative: true,
+    // },
+    // {
+    //     id: 6,
+    //     title: "Web Dinámica",
+    //     image: "/image-6.jpg",
+    //     urlGithub: "#!",
+    //     urlDemo: "#!",
+    //     operative: false,
+    // },
+    // {
+    //     id: 7,
+    //     title: "Dark Web ",
+    //     image: "/image-7.jpg",
+    //     urlGithub: "#!",
+    //     urlDemo: "#!",
+    //     operative: false,
+    // },
+    // {
+    //     id: 8,
+    //     title: "E-commerce web",
+    //     image: "/image-8.jpg",
+    //     urlGithub: "#!",
+    //     urlDemo: "#!",
+    //     operative: false,
+    // }
 ];
 
 export const web3page = [
@@ -220,35 +228,41 @@ export const web3page = [
         description:
             "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
         imageUrl: "/profile1.png",
-        urlGithub: "#!",
+        urlGithubWeb: "#!",
         urlDemo: "#!",
+        urlGithubBlock: "#!",
     },
     {
         id: 2,
         name: "Juan Pérez",
         description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
+            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos.",
         imageUrl: "/profile2.png",
-        urlGithub: "#!",
+        urlGithubWeb: "#!",
         urlDemo: "#!",
+        urlGithubBlock: "#!",
     },
     {
         id: 3,
+
+
         name: "María García",
         description:
             "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
         imageUrl: "/profile3.png",
-        urlGithub: "#!",
+        urlGithubWeb: "#!",
         urlDemo: "#!",
+        urlGithubBlock: "#!",
     },
     {
         id: 4,
         name: "Laura Snow",
         description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
+            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones.",
         imageUrl: "/profile4.png",
-        urlGithub: "#!",
+        urlGithubWeb: "#!",
         urlDemo: "#!",
+        urlGithubBlock: "#!",
     },
     {
         id: 5,
@@ -256,16 +270,18 @@ export const web3page = [
         description:
             "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
         imageUrl: "/profile5.png",
-        urlGithub: "#!",
+        urlGithubWeb: "#!",
         urlDemo: "#!",
+        urlGithubBlock: "#!",
     },
     {
         id: 6,
         name: "Antonio Martínez",
         description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
+            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ",
         imageUrl: "/profile6.png",
-        urlGithub: "#!",
+        urlGithubWeb: "#!",
         urlDemo: "#!",
+        urlGithubBlock: "#!",
     },
 ];

@@ -21,11 +21,12 @@ const Web3Page = () => {
                 <CircleImage />
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
                     Ejemplos de proyectos
-                    <span className="block font-bold text-secondary"> de desarollo web3
+                    <span className="block font-bold text-secondary"> de desarrollo web3
                     </span>
                 </h1>
                 <div className="flex items-center justify-center">
-                    <div>
+                    <p className='p-4 px-8 text-white hover:text-white hover:border-secondary/60 border-secondary/10 rounded-md border-4'>Disponible <span className='text-red-600/10 hover:text-white'>en Mayo <i>04/2024</i></span> </p>
+                    {/* <div>
                         <Swiper
                             breakpoints={{
                                 320: {
@@ -76,7 +77,7 @@ const Web3Page = () => {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

@@ -19,35 +19,35 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
     return (
         <div
             key={id}
-            className={operative?"p-4 transition duration-150 rounded-lg bg-secondary/20 hover:bg-secondary/80 border border-teal-50 rounded-xl":"p-4 transition duration-150 rounded-lg bg-black/80 "}
-        > <Link
-        href={operative?urlDemo:"#"}
-        target={operative?"_blank":"_self"}
-        
-    >
-        
-    
+            className={operative ? "p-4 transition duration-150 rounded-lg bg-secondary/20 hover:bg-secondary/80 border border-teal-50 rounded-xl" : "p-4 transition duration-150 rounded-lg bg-black/80 "}
+        > {operative ? <><Link href={urlDemo}  >
             <h3 className="mb-4 text-xl">{title}</h3>
             <Image
                 src={image}
                 alt="Image"
                 width={200} height={200} className="w-full md:w-[200px] rounded-2xl h-auto"
-            /></Link>
+            /></Link></> : <><h3 className="mb-4 text-xl">{title}</h3>
+            <Image
+                src={image}
+                alt="Image"
+                width={200} height={200} className="w-full md:w-[200px] rounded-2xl h-auto"
+            /></>}
+          
 
-            <div className="flex gap-5 mt-5">      
-                {operative ?<Link
+            <div className="flex gap-5 mt-5">
+                {operative ? <Link
                     href={urlGithub}
                     target="_blank"
                     className="p-2 transition duration-150 w-full text-center rounded-lg bg-slate-500 hover:bg-darkBg/80"
                 >
                     Github
-                </Link>:<Link
+                </Link> : <Link
                     href={urlGithub}
                     target="_blank"
                     className="p-2 transition duration-150 w-full text-center rounded-lg bg-red-500/50 hover:bg-red-500/20"
                 >
-                    Working in..
-                </Link>  }
+                    Working..
+                </Link>}
             </div>
         </div>
     );

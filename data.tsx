@@ -155,14 +155,14 @@ export const serviceData = [
 ];
 
 export const dataPortfolio = [
-    {
-        id: 1,
-        title: "Presentación responsiva",
-        image: "/image-1.png",
-        urlGithub: "https://github.com/SKRTEEEEEE",
-        urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
-        operative: true,
-    },
+    // {
+    //     id: 1,
+    //     title: "Presentación responsiva",
+    //     image: "/image-1.png",
+    //     urlGithub: "https://github.com/SKRTEEEEEE",
+    //     urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
+    //     operative: true,
+    // },
     {
         id: 2,
         title: "Web Presentación Blockchain",
@@ -183,18 +183,18 @@ export const dataPortfolio = [
         id: 4,
         title: "Ejemplos dApps",
         image: "/image-4.jpg",
-        urlGithub: "#!",
+        urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
         urlDemo: "#!",
         operative: false,
     },
-    // {
-    //     id: 5,
-    //     title: "Webs Funcionando",
-    //     image: "/image-5.jpg",
-    //     urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
-    //     urlDemo: "#",
-    //     operative: true,
-    // },
+    {
+        id: 5,
+        title: "Web Desarrollador v01",
+        image: "/image-5.jpg",
+        urlGithub: "https://github.com/SKRTEEEEEE/profile-test/tree/v00",
+        urlDemo: "#",
+        operative: false,
+    },
     // {
     //     id: 6,
     //     title: "Web Dinámica",

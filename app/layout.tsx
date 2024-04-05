@@ -6,8 +6,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import Navbar from "@/components/navbar";
-import Header from "@/components/header";
+import Navbar from "@/components/main/navbar";
+import Header from "@/components/main/header";
+import { socialNetworks } from "@/data";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={urbanist.className}>
         <Navbar />
-        <Header />
+        <Header data={socialNetworks}/>
         {children}
       </body>
     </html>

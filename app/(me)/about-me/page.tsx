@@ -1,6 +1,6 @@
-import AvatarServices from "@/components/avatar-services";
-import CircleImage from "@/components/circle-image";
-import SliderServices from "@/components/slider-services";
+import AvatarServices from "@/components/me/avatars/avatar-services";
+import CircleImage from "@/components/me/avatars/circle-image";
+import SliderAboutMe from "@/components/slider-about";
 import Link from "next/link";
 // import TransitionPage from "@/components/transition-page";
 
@@ -28,7 +28,7 @@ const AboutMePage = () => {
 
                 {/* SLIDER */}
                 <div>
-                    <SliderServices />
+                    <SliderAboutMe />
                 </div>
             </div>
         </>

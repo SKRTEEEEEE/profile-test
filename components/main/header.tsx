@@ -1,10 +1,19 @@
 "use client"
 
-import { socialNetworks } from "@/data";
+
 import Link from "next/link";
 import { MotionTransition } from "./transition-component";
-
-const Header = () => {
+interface SocialNetwork {
+    id: number;
+    logo: JSX.Element; // Tipo para un elemento JSX
+    src: string;
+  }
+  
+  interface Props {
+    data: SocialNetwork[];
+  }
+  
+  const Header: React.FC<Props> = ({ data }) => {
     return (
         <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
             <header>
@@ -16,7 +25,7 @@ const Header = () => {
                         </h1>
                     </Link>
                     <div className="flex items-center justify-center gap-7">
-                        {socialNetworks.map(({ logo, src, id }) => (
+                        {data.map(({ logo, src, id }) => (
                             <Link
                                 key={id}
                                 href={src}

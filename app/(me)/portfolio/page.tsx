@@ -1,13 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
+
 
 import { dataPortfolio } from "@/data";
 
-import AvatarPortfolio from "@/components/avatar-portfolio";
-import CircleImage from "@/components/circle-image";
-import TransitionPage from "@/components/transition-page";
-import ContainerPage from "@/components/container-page";
-import PortfolioBox from "@/components/portfolio-box";
+import AvatarPortfolio from "@/components/me/avatars/avatar-portfolio";
+import CircleImage from "@/components/me/avatars/circle-image";
+import TransitionPage from "@/components/main/transition-page";
+import ContainerPage from "@/components/main/container-page";
+import PortfolioBox from "@/components/me/portfolio-box";
 
 
 const PortfolioPage = () => {

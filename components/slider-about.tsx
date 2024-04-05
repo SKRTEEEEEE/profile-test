@@ -5,7 +5,7 @@ import { Pagination } from 'swiper/modules';
 
 import { serviceData } from '@/data';
 
-const SliderServices = () => {
+const SliderAboutMe = () => {
     return (
         <Swiper
             breakpoints={{
@@ -45,4 +45,4 @@ const SliderServices = () => {
     );
 }
 
-export default SliderServices;
+export default SliderAboutMe;

@@ -155,46 +155,48 @@ export const serviceData = [
 ];
 
 export const dataPortfolio = [
-    {
-        id: 1,
-        title: "Presentación responsiva",
-        image: "/image-1.png",
-        urlGithub: "https://github.com/SKRTEEEEEE",
-        urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
-        operative: true,
-    },
+
+    // {
+    //     id: 1,
+    //     title: "Presentación responsiva",
+    //     image: "/image-1.png",
+    //     urlGithub: "https://github.com/SKRTEEEEEE",
+    //     urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
+    //     operative: true,
+    // },
     {
         id: 2,
-        title: "Web Presentación Blockchain",
-        image: "/image-2.png",
-        urlGithub: "https://github.com/SKRTEEEEEE/blockchain-presentation",
-        urlDemo: "https://blockchain-presentation-eta.vercel.app/",
-        operative: true,
-    },
-    {
-        id: 3,
-        title: "Web Informativa del Desarrollador",
+        title: "Web Perfil del Desarrollador",
         image: "/image-3.png",
         urlGithub: "https://github.com/SKRTEEEEEE/profile-test",
         urlDemo: "#!",
         operative: true,
     },
     {
+        id: 3,
+        title: "Web Presentación Blockchain",
+        image: "/image-2.png",
+        urlGithub: "https://github.com/SKRTEEEEEE/blockchain-presentation",
+        urlDemo: "https://blockchain-presentation-eta.vercel.app/",
+        operative: true,
+    },
+ 
+    {
         id: 4,
-        title: "Ejemplos dApps",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Ejemplos Aplicaciones Descentralizadas",
+        image: "/image-4.png",
+        urlGithub: "https://github.com/SKRTEEEEEE/ejemplos-dApps",
+        urlDemo: "http://ejemplos-d-apps.vercel.app/",
+        operative: true,
+    },
+    {
+        id: 5,
+        title: "Web Perfil v2",
+        image: "/image-5.jpg",
+        urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
+        urlDemo: "#",
         operative: false,
     },
-    // {
-    //     id: 5,
-    //     title: "Webs Funcionando",
-    //     image: "/image-5.jpg",
-    //     urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
-    //     urlDemo: "#",
-    //     operative: true,
-    // },
     // {
     //     id: 6,
     //     title: "Web Dinámica",

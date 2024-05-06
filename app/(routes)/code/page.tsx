@@ -25,8 +25,8 @@ const Web3Page = () => {
                     </span>
                 </h1>
                 <div className="flex items-center justify-center">
-                    <p className='p-4 px-8 text-white hover:text-white hover:border-secondary/60 border-secondary/10 rounded-md border-4'>Disponible <span className='text-red-600/10 hover:text-white'>en Mayo <i>04/2024</i></span> </p>
-                    {/* <div>
+                    {/* <p className='p-4 px-8 text-white hover:text-white hover:border-secondary/60 border-secondary/10 rounded-md border-4'>Disponible <span className='text-red-600/10 hover:text-white'>en Mayo <i>04/2024</i></span> </p> */}
+                  <div>
                         <Swiper
                             breakpoints={{
                                 320: {
@@ -39,45 +39,56 @@ const Web3Page = () => {
                                 clickable: true
                             }}
                             modules={[Pagination]}
-                            className="h-[380px] md:h-[300px] w-[270px] xl:w-[750px] lg:w-[650px] sm:w-[550px] "
+                            className="h-[380px] md:h-[300px] w-[270px] xl:w-[750px] lg:w-[650px] sm:w-[550px] mt-4 flex justify-evenly items-evenly"
                         >
-                            {web3page.map(({ id, name, description, imageUrl, urlDemo, urlGithubWeb, urlGithubBlock }) => (
+                            {web3page.map(({ id, name, description, path,  contractUrl, usos }) => (
+
                                 <SwiperSlide key={id}>
-                                    <Image src={imageUrl} alt={name} width="100" height="100" className="mx-auto rounded-full" />
-                                    <h4 className='text-center'>{name}</h4>
+                                    <article className='flex flex-col  h-full justify-evenly items-evenly'>
+                                    {/* <Image src={imageUrl} alt={name} width="100" height="100" className="mx-auto rounded-full" /> */}
+                                    <h2 className='text-center text-3xl text-primary font-semibold'>{name}</h2>
                                     <div className="mt-5 text-center">
                                         {description}
                                     </div>
+                                    <section>
+                                        <fieldset>
+                                            <legend className='text-primary-200'>Principales usos</legend>
+                                            <ul>
+                                            {usos.map((uso, index) => (
+                                    <li className='text-xs border-primary-200/10 border-b-2 rounded-sm px-2 py' key={index}>{uso}</li>
+                                ))}</ul>
+                                        </fieldset>
+                                    </section>
                                     
-                                        <div className="flex justify-between gap-5 mt-5">
-                                            <Link
+                                        <div className="flex justify-between gap-5 mb-5">
+                                            {/* <Link
                                                 href={urlGithubWeb}
                                                 target="_blank"
                                                 className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
                                             >
                                                 <span className='hidden lg:inline'>Github </span>Website Code
-                                            </Link>
+                                            </Link> */}
 
                                             <Link
-                                                href={urlDemo}
+                                                href={`https://ejemplos-d-apps.vercel.app/${path}`}
                                                 target="_blank"
                                                 className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
                                             >
                                                 Live demo
                                             </Link>
                                             <Link
-                                                href={urlGithubBlock}
+                                                href={contractUrl}
                                                 target="_blank"
                                                 className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
                                             >
                                                 <span className='hidden lg:inline'>Github </span>Blockchain Code
                                             </Link>
                                         </div>
-                                    
+                                        </article>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
-                    </div> */}
+                    </div> 
                 </div>
             </div>
         </>

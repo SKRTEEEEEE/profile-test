@@ -9,15 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // primary: {
-        //   DEFAULT: '#75f4f4',
-        // },
-        // secondary: {
-        //   DEFAULT: '#af2bbf',
-        // },
-        // neutral: {
-        //   DEFAULT: '#131424',
-        // },
         success: {
           DEFAULT: '#7eea0b',
         },

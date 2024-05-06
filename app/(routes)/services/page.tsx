@@ -2,11 +2,11 @@
 
 "use client"
 
-import { Avatar } from "@/components/avatar";
-import ContainerPage from "@/components/container-page";
-import CounterServices from "@/components/counter-services";
-import TimeLine from "@/components/time-line";
-import TransitionPage from "@/components/transition-page";
+import { Avatar } from "@/components/routes/avatar";
+import ContainerPage from "@/components/main/container-page";
+import CounterServices from "@/components/routes/counter-services";
+import TimeLine from "@/components/routes/time-line";
+import TransitionPage from "@/components/main/transition-page";
 
 const StudiesPage = () => {
     return (

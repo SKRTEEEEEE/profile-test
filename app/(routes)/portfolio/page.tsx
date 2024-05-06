@@ -3,11 +3,11 @@ import Link from "next/link";
 
 import { dataPortfolio } from "@/data";
 
-import AvatarPortfolio from "@/components/avatar-portfolio";
-import CircleImage from "@/components/circle-image";
-import TransitionPage from "@/components/transition-page";
-import ContainerPage from "@/components/container-page";
-import PortfolioBox from "@/components/portfolio-box";
+import AvatarPortfolio from "@/components/routes/avatar-portfolio";
+import CircleImage from "@/components/routes/circle-image";
+import TransitionPage from "@/components/main/transition-page";
+import ContainerPage from "@/components/main/container-page";
+import PortfolioBox from "@/components/routes/portfolio-box";
 
 
 const PortfolioPage = () => {

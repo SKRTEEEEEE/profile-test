@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 import { web3page } from '@/data';
-import CircleImage from '@/components/circle-image';
+import CircleImage from '@/components/routes/circle-image';
 // import AvatarPortfolio from '@/components/avatar-portfolio';
-import TransitionPage from '@/components/transition-page';
+import TransitionPage from '@/components/main/transition-page';
 import Link from 'next/link';
-import AvatarCode from '@/components/avatar-code';
+import AvatarCode from '@/components/routes/avatar-code';
 
 const Web3Page = () => {
     return (

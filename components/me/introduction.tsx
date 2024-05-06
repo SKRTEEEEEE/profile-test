@@ -23,7 +23,7 @@ const Introduction = () => {
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
-                            className="font-bold text-secondary"
+                            className="font-bold text-secondary-300"
                         />
                     </h1>
 

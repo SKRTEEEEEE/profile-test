@@ -3,14 +3,16 @@
 import { socialNetworks } from "@/data";
 import Link from "next/link";
 import { MotionTransition } from "./transition-component";
+import Image from "next/image";
 
 const Header = () => {
     return (
-        <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
+        <MotionTransition position="bottom" className=" absolute z-40 inline-block w-full top-5 md:top-10">
             <header>
                 <div className="container justify-between max-w-6xl mx-auto md:flex">
-                    <Link href='/'>
-                        <h1 className="my-3 text-4xl font-bold text-center md:text-left">
+                    <Link href='/' className="flex items-center justify-center gap-4">
+                        <Image alt="logo" className=" " width={60} height={5} src="/skrt-white.png"/>
+                        <h1 className="text-4xl font-bold text-center md:text-left">
                             SKRTEEEEE
                             <span className="text-secondary">Dev</span>
                         </h1>

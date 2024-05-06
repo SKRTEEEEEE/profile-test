@@ -155,46 +155,48 @@ export const serviceData = [
 ];
 
 export const dataPortfolio = [
-    {
-        id: 1,
-        title: "Presentación responsiva",
-        image: "/image-1.png",
-        urlGithub: "https://github.com/SKRTEEEEEE",
-        urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
-        operative: true,
-    },
+
+    // {
+    //     id: 1,
+    //     title: "Presentación responsiva",
+    //     image: "/image-1.png",
+    //     urlGithub: "https://github.com/SKRTEEEEEE",
+    //     urlDemo: "https://tokenizacion.my.canva.site/ventajas-tecnologicas-3",
+    //     operative: true,
+    // },
     {
         id: 2,
-        title: "Web Presentación Blockchain",
-        image: "/image-2.png",
-        urlGithub: "https://github.com/SKRTEEEEEE/blockchain-presentation",
-        urlDemo: "https://blockchain-presentation-eta.vercel.app/",
-        operative: true,
-    },
-    {
-        id: 3,
-        title: "Web Informativa del Desarrollador",
+        title: "Web Perfil del Desarrollador",
         image: "/image-3.png",
         urlGithub: "https://github.com/SKRTEEEEEE/profile-test",
         urlDemo: "#!",
         operative: true,
     },
     {
+        id: 3,
+        title: "Web Presentación Blockchain",
+        image: "/image-2.png",
+        urlGithub: "https://github.com/SKRTEEEEEE/blockchain-presentation",
+        urlDemo: "https://blockchain-presentation-eta.vercel.app/",
+        operative: true,
+    },
+ 
+    {
         id: 4,
-        title: "Ejemplos dApps",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Ejemplos Aplicaciones Descentralizadas",
+        image: "/image-4.png",
+        urlGithub: "https://github.com/SKRTEEEEEE/ejemplos-dApps",
+        urlDemo: "http://ejemplos-d-apps.vercel.app/",
+        operative: true,
+    },
+    {
+        id: 5,
+        title: "Web Perfil v2",
+        image: "/image-5.jpg",
+        urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
+        urlDemo: "#",
         operative: false,
     },
-    // {
-    //     id: 5,
-    //     title: "Webs Funcionando",
-    //     image: "/image-5.jpg",
-    //     urlGithub: "https://github.com/SKRTEEEEEE/frontpruebas",
-    //     urlDemo: "#",
-    //     operative: true,
-    // },
     // {
     //     id: 6,
     //     title: "Web Dinámica",
@@ -224,64 +226,60 @@ export const dataPortfolio = [
 export const web3page = [
     {
         id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-        urlGithubWeb: "#!",
-        urlDemo: "#!",
-        urlGithubBlock: "#!",
-    },
-    {
+        name: 'Safe Storage',
+        path: "/counter",
+        contractUrl: "https://github.com/SKRTEEEEEE/trySolidity24/blob/main/markdown/contratos_desplegados.md",
+        active: true,
+        title: "Almacén",
+        description: "Programa de almacenamiento seguro, utilizando una blockchain existente e su inmutabilidad para almacenar datos",
+        usos: [
+          "Maxima seguridad en el almacenamiento de datos", "Acceso a los datos a traves de tecnología web","Ventajas asociadas a la seguridad blockchain" 
+        ],
+        instrucciones:[
+          "Conectar una billetera", "Introducir un numero a guardar", "Clickar en el boton de guardar", "Aceptar la interacción con el contrato", "Comprobar en la pagina como se ha modificado el numero"
+        ]
+  
+      },
+      {
         id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos.",
-        imageUrl: "/profile2.png",
-        urlGithubWeb: "#!",
-        urlDemo: "#!",
-        urlGithubBlock: "#!",
-    },
-    {
+        name: 'NFT MemberShip',
+        path: "/nft-membership",
+        contractUrl: "https://github.com/SKRTEEEEEE/trySolidity24/blob/main/markdown/contratos_desplegados.md",
+        active: true,
+        title: "Membresía",
+        description: "Programa de membresía con NFT asociado, utilizando blockchain para gestionar la membresía",
+        usos: [
+          "Acceso a contenido exclusivo para los poseedores", "Seguridad en el intercambio e uso del NFT", "Ventajas asociadas a los tokens ERC1155"
+        ],
+        instrucciones:[
+          "Conectar una billetera", "Conseguir tokens de prueba SepoliaETH", "Clickar en el boton de comprar el NFT", "Aceptar la compra con la billetera", "Comprobar en Opensea o otras plataformas NFT", "O en la pagina en la pagina donde acabas de comprar el NFT", "Ahora podrás acceder a la pagina de membresía y su contenido exclusivo"
+        ]
+      },
+      {
         id: 3,
-
-
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
-        urlGithubWeb: "#!",
-        urlDemo: "#!",
-        urlGithubBlock: "#!",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones.",
-        imageUrl: "/profile4.png",
-        urlGithubWeb: "#!",
-        urlDemo: "#!",
-        urlGithubBlock: "#!",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-        urlGithubWeb: "#!",
-        urlDemo: "#!",
-        urlGithubBlock: "#!",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ",
-        imageUrl: "/profile6.png",
-        urlGithubWeb: "#!",
-        urlDemo: "#!",
-        urlGithubBlock: "#!",
-    },
+        name: 'Lottery',
+        path: "/nft-raffle",
+        contractUrl: "https://github.com/SKRTEEEEEE/trySolidity24/blob/main/markdown/contratos_desplegados.md",
+        active: true,
+        title: "Sorteo",
+        description: "Programa de sorteo de NFT de membresía, utilizando una blockchain existente y su seguridad para gestionar el sorteo",
+        usos: [
+          "Acceso a contenido exclusivo para los participantes", "Seguridad en el intercambio e uso del NFT", "Ventajas asociadas a los tokens ERC1155"
+        ],
+        instrucciones:[
+          "Conectar una billetera", "Conseguir tokens de prueba SepoliaETH", "Marcar la cantidad de tokens que se desean", "Aceptar la compra con la billetera", "Comprobar a final de mes si has sido premiado", "Podrás mirarlo en Opensea o otras plataformas NFT", "O en la pagina de la rifa, en la sección de ganadores"
+        ]
+  
+      },
+        // {
+        //   'Marketing 3.0',},
+    
+    //   {
+    //       id: 4,
+    //       name: 'Other',
+    //       contractUrl: "/#",
+    //       path: "/#",
+    //       false: false,
+      
+    //   },
 ];
